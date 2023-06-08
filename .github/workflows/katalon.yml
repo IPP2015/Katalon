@@ -1,0 +1,28 @@
+name: Katalon Studio Tests
+
+on:
+  push:
+    branches:
+      - main  # Modify this branch name if needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'  # Modify Java version if needed
+
+      - name: Set up Katalon Studio
+        run: |
+          wget -O katalon.zip "https://download.katalon.com/7.9.1/Katalon_Studio_Linux_64-7.9.1.zip"  # Modify the Katalon Studio version if needed
+          unzip katalon.zip -d $HOME/katalon
+          chmod +x $HOME/katalon/katalonc
+
+      - name: Run Katalon Studio tests
+        run: $HOME/katalon/katalonc -noSplash -runMode=console -projectPath=<path-to-your-project> -retry=0 -testSuitePath="<path-to-your-test-suite>" -executionProfile="<execution-profile>" -browserType="<browser-type>"
