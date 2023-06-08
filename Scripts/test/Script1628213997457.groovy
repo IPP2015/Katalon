@@ -19,33 +19,33 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.linkedin.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2F%3Foriginal_referer%3D')
+WebUI.navigateToUrl('https://www.linkedin.com/')
 
-WebUI.click(findTestObject('Object Repository/link/Page_LinkedIn Log In or Sign Up/a_Sign in'))
-
-WebUI.setText(findTestObject('Object Repository/link/Page_LinkedIn Login, Sign in  LinkedIn/input_Sign in_session_key'), 
-    findTestData('New Test Data').getValue(1, 1))
-
-WebUI.setEncryptedText(findTestObject('Object Repository/link/Page_LinkedIn Login, Sign in  LinkedIn/input_Sign in_session_password'), 
-    'pqeuzKH9y4loX6Hje5BMig==')
-
-WebUI.click(findTestObject('Object Repository/link/Page_LinkedIn Login, Sign in  LinkedIn/button_Sign in'))
-
-WebUI.clickImage(findTestObject('Page_Feed  LinkedIn/svg_Tulis Pesan_mercado-match'))
-
-WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Home'))
-
-WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Jaringan Saya'))
-
-WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Pekerjaan'))
-
-WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Pesan'))
-
-WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Notifikasi'))
-
-WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Saya'))
-
-WebUI.click(findTestObject('link/Page_ilham pandu putra  LinkedIn/a_Logout'))
-
+//WebUI.click(findTestObject('test',[('value'):'']))
+//
+//WebUI.setText(findTestObject('Object Repository/link/Page_LinkedIn Login, Sign in  LinkedIn/input_Sign in_session_key'), 
+//    findTestData('New Test Data').getValue(1, 1))
+//
+//WebUI.setEncryptedText(findTestObject('Object Repository/link/Page_LinkedIn Login, Sign in  LinkedIn/input_Sign in_session_password'), 
+//    'pqeuzKH9y4loX6Hje5BMig==')
+//
+//WebUI.click(findTestObject('Object Repository/link/Page_LinkedIn Login, Sign in  LinkedIn/button_Sign in'))
+//
+//WebUI.clickImage(findTestObject('Page_Feed  LinkedIn/svg_Tulis Pesan_mercado-match'))
+//
+//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Home'))
+//
+//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Jaringan Saya'))
+//
+//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Pekerjaan'))
+//
+//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Pesan'))
+//
+//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Notifikasi'))
+//
+//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Saya'))
+//
+//WebUI.click(findTestObject('link/Page_ilham pandu putra  LinkedIn/a_Logout'))
+//
 WebUI.closeBrowser()
-
+//
