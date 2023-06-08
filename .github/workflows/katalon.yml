@@ -13,16 +13,16 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v2
         with:
-          java-version: '11'  # Modify Java version if needed
+          java-version: '11'
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Use Node.js 16
+          node-version: '16'
 
       - name: Set up Katalon Studio
         run: |
-          wget -O katalon.zip "https://download.katalon.com/7.9.1/Katalon_Studio_Linux_64-7.9.1.zip"  # Modify the Katalon Studio version if needed
+          wget -O katalon.zip "https://download.katalon.com/7.9.1/Katalon_Studio_Linux_64-7.9.1.zip"
           unzip katalon.zip -d $HOME/katalon
           chmod +x $HOME/katalon/katalonc
           echo "distribution=$HOME/katalon" >> $GITHUB_ENV
