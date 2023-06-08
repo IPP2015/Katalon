@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.linkedin.com/')
+WebUI.navigateToUrl('https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.linkedin.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2F%3Foriginal_referer%3D')
 
 WebUI.click(findTestObject('Object Repository/link/Page_LinkedIn Log In or Sign Up/a_Sign in'))
 

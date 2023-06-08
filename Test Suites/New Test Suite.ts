@@ -25,6 +25,7 @@
          </iterationEntity>
          <testDataId>Data Files/New Test Data</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>1938bc45-c976-4a0a-974f-c4de756ac71b</testDataLinkId>
          <type>DATA_COLUMN</type>
