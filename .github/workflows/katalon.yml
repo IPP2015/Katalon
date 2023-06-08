@@ -1,6 +1,9 @@
 name: Katalon Studio Tests
 
-on: [push]
+on:
+  push:
+    branches:
+      - main  # Modify this branch name if needed
 
 jobs:
   build:
