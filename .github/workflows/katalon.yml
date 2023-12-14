@@ -20,7 +20,7 @@ jobs:
 
       - name: Set up Katalon Studio
         run: |
-          wget -O katalon.zip "https://download.katalon.com/7.9.1/Katalon_Studio_Linux_64-7.9.1.zip"  # Modify the Katalon Studio version if needed
+          wget -O katalon.zip "https://download.katalon.com/7.9.1/Katalon_Studio_Linux_64-7.9.1.zip"  
           unzip katalon.zip -d $HOME/katalon
           chmod +x $HOME/katalon/katalonc
 
