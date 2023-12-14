@@ -3,10 +3,11 @@
    <description></description>
    <name>New Test Data</name>
    <tag></tag>
+   <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>f2e2acdf-d978-464b-a1bf-9ff4d469e208</dataFileGUID>
-   <dataSourceUrl>../../OneDrive/Documents/Book11.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\Ilham Pandu Putra\Downloads\Book.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>

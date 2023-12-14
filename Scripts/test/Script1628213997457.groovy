@@ -19,33 +19,55 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://www.linkedin.com/')
+WebUI.navigateToUrl('https://www.hukumonline.com/')
 
-//WebUI.click(findTestObject('test',[('value'):'']))
-//
-//WebUI.setText(findTestObject('Object Repository/link/Page_LinkedIn Login, Sign in  LinkedIn/input_Sign in_session_key'), 
-//    findTestData('New Test Data').getValue(1, 1))
-//
-//WebUI.setEncryptedText(findTestObject('Object Repository/link/Page_LinkedIn Login, Sign in  LinkedIn/input_Sign in_session_password'), 
-//    'pqeuzKH9y4loX6Hje5BMig==')
-//
-//WebUI.click(findTestObject('Object Repository/link/Page_LinkedIn Login, Sign in  LinkedIn/button_Sign in'))
-//
-//WebUI.clickImage(findTestObject('Page_Feed  LinkedIn/svg_Tulis Pesan_mercado-match'))
-//
-//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Home'))
-//
-//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Jaringan Saya'))
-//
-//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Pekerjaan'))
-//
-//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Pesan'))
-//
-//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Notifikasi'))
-//
-//WebUI.click(findTestObject('link/Page_Feed  LinkedIn/span_Saya'))
-//
-//WebUI.click(findTestObject('link/Page_ilham pandu putra  LinkedIn/a_Logout'))
-//
-WebUI.closeBrowser()
-//
+WebUI.maximizeWindow()
+
+WebUI.takeFullPageScreenshot()
+
+WebUI.setText(findTestObject('test', [('value') : '//*[@id="desktop"]/div[1]/div/div/input']), 'Peraturan Pemerintah Nomor 40 Tahun 2006')
+
+WebUI.sendKeys(findTestObject('test', [('value') : '//*[@id="desktop"]/div[1]/div/div/input']), Keys.chord(Keys.ENTER))
+
+String satu = WebUI.getText(findTestObject('test', [('value') : '//*[@title="Peraturan Pemerintah <em>Nomor</em> <em>40</em> <em>Tahun</em> <em>2006</em>"]']))
+
+WebUI.takeFullPageScreenshot()
+
+WebUI.verifyMatch(satu, 'Peraturan Pemerintah Nomor 40 Tahun 2006', false)
+
+WebUI.verifyTextPresent('Peraturan Pemerintah Nomor 40 Tahun 2006', false)
+
+String dua = WebUI.getText(findTestObject('test', [('value') : '//*[@class="css-1iiildh"]']))
+ 
+ WebUI.verifyMatch(dua, 'TATA CARA PENYUSUNAN RENCANA PEMBANGUNAN NASIONAL', false)
+ 
+ WebUI.verifyTextPresent('TATA CARA PENYUSUNAN RENCANA PEMBANGUNAN NASIONAL', false)
+ 
+ String tiga = WebUI.getText(findTestObject('test', [('value') : '//*[@class="css-1w49yes"]']))
+  
+  WebUI.verifyMatch(tiga, 'melaksanakan ketentuan Pasal 27 ayat (1) Undang-Undang Nomor 25 Tahun 2004 tentang Sistem Perencanaan Pembangunan Nasional perlu menetapkan Peraturan Pemerintah tentang Tata Cara Penyusunan Rencana Pembangunan', false)
+  
+  WebUI.verifyTextPresent('melaksanakan ketentuan Pasal 27 ayat (1) Undang-Undang Nomor 25 Tahun 2004 tentang Sistem Perencanaan Pembangunan Nasional perlu menetapkan Peraturan Pemerintah tentang Tata Cara Penyusunan Rencana Pembangunan', false)
+   
+  String empat = WebUI.getText(findTestObject('test', [('value') : '/html/body/div/main/div[5]/div/div/div[2]/div[1]/div[2]/article[1]/div[2]/p[1]']))
+   
+   WebUI.verifyMatch(empat, 'Ditetapkan: 29 November 2006', false)
+   
+   WebUI.verifyTextPresent('Ditetapkan: 29 November 2006', false)
+   
+   String lima = WebUI.getText(findTestObject('test', [('value') : '/html/body/div/main/div[5]/div/div/div[2]/div[1]/div[2]/article[1]/div[2]/p[2]']))
+	
+	WebUI.verifyMatch(lima, 'Berlaku: 29 November 2006', false)
+	
+	WebUI.verifyTextPresent('Berlaku: 29 November 2006', false)
+	String enam = WebUI.getText(findTestObject('test', [('value') : '/html/body/div/main/div[5]/div/div/div[2]/div[1]/div[2]/article[1]/p']))
+	
+	WebUI.verifyMatch(enam, 'Status: Login Atau Berlangganan Untuk Akses Fitur Ini', false)
+	
+	WebUI.verifyTextPresent('Status: Login Atau Berlangganan Untuk Akses Fitur Ini', false)
+	
+	WebUI.closeBrowser()
+	
+   
+   
+	
