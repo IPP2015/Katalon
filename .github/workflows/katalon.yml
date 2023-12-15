@@ -3,7 +3,7 @@ name: Run Katalon Studio
 on:
   push:
     branches:
-      - master  # Modify this branch name if needed
+      - master
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v2
         with:
-          java-version: '11'  # Modify Java version if needed
+          java-version: '11'
 
       - name: Set up Katalon Studio
         run: |
