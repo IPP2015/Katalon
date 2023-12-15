@@ -38,36 +38,36 @@ WebUI.verifyMatch(satu, 'Peraturan Pemerintah Nomor 40 Tahun 2006', false)
 WebUI.verifyTextPresent('Peraturan Pemerintah Nomor 40 Tahun 2006', false)
 
 String dua = WebUI.getText(findTestObject('test', [('value') : '//*[@class="css-1iiildh"]']))
- 
- WebUI.verifyMatch(dua, 'TATA CARA PENYUSUNAN RENCANA PEMBANGUNAN NASIONAL', false)
- 
- WebUI.verifyTextPresent('TATA CARA PENYUSUNAN RENCANA PEMBANGUNAN NASIONAL', false)
- 
- String tiga = WebUI.getText(findTestObject('test', [('value') : '//*[@class="css-1w49yes"]']))
-  
-  WebUI.verifyMatch(tiga, 'melaksanakan ketentuan Pasal 27 ayat (1) Undang-Undang Nomor 25 Tahun 2004 tentang Sistem Perencanaan Pembangunan Nasional perlu menetapkan Peraturan Pemerintah tentang Tata Cara Penyusunan Rencana Pembangunan', false)
-  
-  WebUI.verifyTextPresent('melaksanakan ketentuan Pasal 27 ayat (1) Undang-Undang Nomor 25 Tahun 2004 tentang Sistem Perencanaan Pembangunan Nasional perlu menetapkan Peraturan Pemerintah tentang Tata Cara Penyusunan Rencana Pembangunan', false)
-   
-  String empat = WebUI.getText(findTestObject('test', [('value') : '/html/body/div/main/div[5]/div/div/div[2]/div[1]/div[2]/article[1]/div[2]/p[1]']))
-   
-   WebUI.verifyMatch(empat, 'Ditetapkan: 29 November 2006', false)
-   
-   WebUI.verifyTextPresent('Ditetapkan: 29 November 2006', false)
-   
-   String lima = WebUI.getText(findTestObject('test', [('value') : '/html/body/div/main/div[5]/div/div/div[2]/div[1]/div[2]/article[1]/div[2]/p[2]']))
-	
-	WebUI.verifyMatch(lima, 'Berlaku: 29 November 2006', false)
-	
-	WebUI.verifyTextPresent('Berlaku: 29 November 2006', false)
-	String enam = WebUI.getText(findTestObject('test', [('value') : '/html/body/div/main/div[5]/div/div/div[2]/div[1]/div[2]/article[1]/p']))
-	
-	WebUI.verifyMatch(enam, 'Status: Login Atau Berlangganan Untuk Akses Fitur Ini', false)
-	
-	WebUI.verifyTextPresent('Status: Login Atau Berlangganan Untuk Akses Fitur Ini', false)
-	
-	WebUI.closeBrowser()
-	
-   
-   
-	
+
+WebUI.verifyMatch(dua, 'TATA CARA PENYUSUNAN RENCANA PEMBANGUNAN NASIONAL', false)
+
+WebUI.verifyTextPresent('TATA CARA PENYUSUNAN RENCANA PEMBANGUNAN NASIONAL', false)
+
+String tiga = WebUI.getText(findTestObject('test', [('value') : '//*[@class="css-1w49yes"]']))
+
+WebUI.verifyMatch(tiga, 'melaksanakan ketentuan Pasal 27 ayat (1) Undang-Undang Nomor 25 Tahun 2004 tentang Sistem Perencanaan Pembangunan Nasional perlu menetapkan Peraturan Pemerintah tentang Tata Cara Penyusunan Rencana Pembangunan', 
+    false)
+
+WebUI.verifyTextPresent('melaksanakan ketentuan Pasal 27 ayat (1) Undang-Undang Nomor 25 Tahun 2004 tentang Sistem Perencanaan Pembangunan Nasional perlu menetapkan Peraturan Pemerintah tentang Tata Cara Penyusunan Rencana Pembangunan', 
+    false)
+
+String empat = WebUI.getText(findTestObject('test', [('value') : '/html/body/div/main/div[5]/div/div/div[2]/div[1]/div[2]/article[1]/div[2]/p[1]']))
+
+WebUI.verifyMatch(empat, 'Ditetapkan: 29 November 2006', false)
+
+WebUI.verifyTextPresent('Ditetapkan: 29 November 2006', false)
+
+String lima = WebUI.getText(findTestObject('test', [('value') : '/html/body/div/main/div[5]/div/div/div[2]/div[1]/div[2]/article[1]/div[2]/p[2]']))
+
+WebUI.verifyMatch(lima, 'Berlaku: 29 November 2006', false)
+
+WebUI.verifyTextPresent('Berlaku: 29 November 2006', false)
+
+String enam = WebUI.getText(findTestObject('test', [('value') : '/html/body/div/main/div[5]/div/div/div[2]/div[1]/div[2]/article[1]/p']))
+
+WebUI.verifyMatch(enam, 'Status: Login Atau Berlangganan Untuk Akses Fitur Ini', false)
+
+WebUI.verifyTextPresent('Status: Login Atau Berlangganan Untuk Akses Fitur Ini', false)
+
+WebUI.closeBrowser()
+
