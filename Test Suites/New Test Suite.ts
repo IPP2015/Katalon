@@ -5,7 +5,7 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>panduputra.ilham@gmail.com;</mailRecipient>
-   <numberOfRerun>10</numberOfRerun>
+   <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -14,21 +14,71 @@
    <testCaseLink>
       <guid>26769407-9840-4f37-aed9-483c91fdea2f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
+      <iterationNameVariable>
+         <defaultValue>''</defaultValue>
+         <description></description>
+         <id>f765ce06-a909-44c8-8f8f-43d479cfbb4a</id>
+         <masked>false</masked>
+         <name>variable</name>
+      </iterationNameVariable>
       <testCaseId>Test Cases/test</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>8d75252f-26dd-4fc0-81e3-43006c2ebae2</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-5</value>
+         </iterationEntity>
+         <testDataId>Data Files/New Test Data</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>8d75252f-26dd-4fc0-81e3-43006c2ebae2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Penghasilan_total</value>
          <variableId>f765ce06-a909-44c8-8f8f-43d479cfbb4a</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>d9589d5d-6d1c-49f3-ac9b-6e8e97b1845d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/test1</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a5925e79-54ae-4c49-a166-c1137856be22</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Test Case</testCaseId>
+      <testDataLink>
+         <combinationType>MANY</combinationType>
+         <id>79a4a32d-1397-49e1-8b5d-48f42119c79d</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/New Test Data</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>79a4a32d-1397-49e1-8b5d-48f42119c79d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Penghasilan_total</value>
+         <variableId>931b8f0c-e2e1-4e36-aa50-cef44d2cd20e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>79a4a32d-1397-49e1-8b5d-48f42119c79d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Pengeluaran</value>
+         <variableId>f45d0728-1a5c-42dc-b155-798bba09facd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>79a4a32d-1397-49e1-8b5d-48f42119c79d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Jangka_Waktu</value>
+         <variableId>cb03f7a0-f097-4dc1-9cef-420c8c212b2d</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
