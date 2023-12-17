@@ -51,7 +51,7 @@
       <guid>a5925e79-54ae-4c49-a166-c1137856be22</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/New Test Case</testCaseId>
+      <testCaseId>Test Cases/Satu</testCaseId>
       <testDataLink>
          <combinationType>MANY</combinationType>
          <id>79a4a32d-1397-49e1-8b5d-48f42119c79d</id>
@@ -79,6 +79,34 @@
          <type>DATA_COLUMN</type>
          <value>Jangka_Waktu</value>
          <variableId>cb03f7a0-f097-4dc1-9cef-420c8c212b2d</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cd0a2ff4-be49-437d-bcc7-4573b09abd27</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Dua</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>d93c1644-d23a-4e14-8076-124245f1b8b6</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/New Test Data</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>d93c1644-d23a-4e14-8076-124245f1b8b6</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Jangka_Waktu</value>
+         <variableId>65a81fde-751d-4dbb-8b60-66c18e75c3b3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>d93c1644-d23a-4e14-8076-124245f1b8b6</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Text</value>
+         <variableId>f36ec251-8242-43b0-8439-f548afd80cb7</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
